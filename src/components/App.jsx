@@ -1,6 +1,12 @@
 import React, { Fragment } from 'react'
 // import { Button00 } from './styled-components/Buttons'
-import { MainContainer, Item, Item1 } from './styled-components/Containers'
+import { MainContainer, Item1 } from './styled-components/Containers'
+
+import * as doMath from './math/doMath'
+
+const a = 1
+const b = 2
+
 
 
 const App = () => {
@@ -8,7 +14,7 @@ const App = () => {
     <Fragment>
       <h1>Grid Lines</h1>
       <MainContainer>
-        <Item1>1</Item1>
+        <Item1>Add is here - { doMath.doAdd(a, b)}</Item1>
         <div>2</div>
         <div>3</div>
         <div>4</div>
